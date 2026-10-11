@@ -1,0 +1,58 @@
+@use '../utils/variables' as vars;
+
+.site-header {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid vars.$color-border;
+  background: vars.$color-background;
+}
+
+.site-header__inner {
+  position: relative;
+  display: flex;
+  min-height: 4.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.site-brand {
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.primary-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.primary-navigation a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primary-navigation a:hover {
+  color: vars.$color-primary;
+}
+
+.nav-toggle {
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  border: 1px solid vars.$color-border;
+  border-radius: 0.65rem;
+  background: #fff;
+}
+
+.nav-toggle__line {
+  width: 1.15rem;
+  height: 2px;
+  border-radius: 2px;
+  background: vars.$color-text;
+}

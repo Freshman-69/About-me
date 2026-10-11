@@ -1,0 +1,33 @@
+@use '../utils/variables' as vars;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: vars.$color-text;
+  background: vars.$color-background;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+}
+
+::selection {
+  color: #fff;
+  background: vars.$color-primary;
+}
+
+:focus-visible {
+  outline: 3px solid vars.$color-primary;
+  outline-offset: 3px;
+}

@@ -1,0 +1,59 @@
+@use '../utils/variables' as vars;
+
+@media (max-width: 48rem) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .primary-navigation {
+    position: absolute;
+    top: calc(100% - 0.25rem);
+    right: 1rem;
+    left: 1rem;
+    display: none;
+    padding: 0.75rem;
+    border: 1px solid vars.$color-border;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: vars.$shadow-card;
+  }
+
+  .primary-navigation.is-open {
+    display: block;
+  }
+
+  .primary-navigation ul {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .primary-navigation a {
+    display: block;
+    padding: 0.75rem;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

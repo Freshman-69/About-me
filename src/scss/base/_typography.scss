@@ -1,0 +1,29 @@
+@use '../utils/variables' as vars;
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 7vw, 4.75rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: vars.$color-muted;
+}
+
+a {
+  text-underline-offset: 0.2em;
+}

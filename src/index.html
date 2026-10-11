@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Універсальний стартовий шаблон для створення адаптивних вебсайтів.">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Перед публікацією заміни назву та опис на дані свого сайту. -->
+    <title>Web Starter | Назва сайту</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
+
+    @@include('templates/header.html')
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <p class="eyebrow">HTML · SCSS · JavaScript · Gulp</p>
+          <h1 id="hero-title">Твій наступний сайт починається тут</h1>
+          <p class="hero__description">
+            Чиста структура проєкту, повторно використовувані HTML-компоненти,
+            адаптивні стилі та автоматична збірка.
+          </p>
+          <a class="button" href="#features">Переглянути можливості</a>
+        </div>
+      </section>
+
+      <section class="features section" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <h2 id="features-title">Основа для будь-якого проєкту</h2>
+          <div class="features__grid">
+            <article class="feature-card">
+              <h3>Зрозуміла структура</h3>
+              <p>HTML, SCSS, JavaScript і ресурси зберігаються в окремих папках.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Швидка розробка</h3>
+              <p>Gulp збирає файли, а BrowserSync оновлює сторінку після змін.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Готовність до адаптації</h3>
+              <p>Базові стилі, семантична розмітка та підтримка клавіатурної навігації.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('templates/footer.html')
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@use '../utils/variables' as vars;
+
+.features h2 {
+  margin-bottom: 2rem;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border: 1px solid vars.$color-border;
+  border-radius: vars.$radius-card;
+  background: #fff;
+  box-shadow: vars.$shadow-card;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.75rem;
+}
