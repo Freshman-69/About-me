@@ -1,25 +1,28 @@
-<header class="site-header">
-  <div class="container site-header__inner">
-    <a class="site-brand" href="./index.html" aria-label="Web Starter, на головну">Web Starter</a>
+<header id="top" class="header">
+  <div class="container">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/Logo.svg" alt="logo" />
+    </a>
 
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-controls="primary-navigation"
-      aria-expanded="false"
-      aria-label="Відкрити меню"
-      data-nav-toggle
-    >
-      <span class="nav-toggle__line" aria-hidden="true"></span>
-      <span class="nav-toggle__line" aria-hidden="true"></span>
-      <span class="nav-toggle__line" aria-hidden="true"></span>
-    </button>
+    <div class="mobile-container">
+      <nav class="header-nav">
+        <a href="#" class="header-nav_item">About</a>
+        <a href="#" class="header-nav_item">Skills</a>
+        <a href="#" class="header-nav_item">Projects</a>
+        <a href="#" class="header-nav_item">Contact</a>
+      </nav>
+    </div>
 
-    <nav class="primary-navigation" id="primary-navigation" aria-label="Головна навігація" data-navigation>
-      <ul>
-        <li><a href="#features">Можливості</a></li>
-        <li><a href="#site-footer">Контакти</a></li>
-      </ul>
-    </nav>
+    <!-- Стильний слайдер -->
+    <div class="language-switcher">
+      <input type="radio" id="lang-en" name="language" value="en" checked />
+      <label for="lang-en">EN</label>
+
+      <input type="radio" id="lang-ua" name="language" value="ua" />
+      <label for="lang-ua">UA</label>
+
+      <span class="slider"></span>
+    </div>
+     
   </div>
 </header>

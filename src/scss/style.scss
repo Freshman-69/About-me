@@ -1,10 +1,7 @@
 // Entry point: global styles and partials are loaded in a predictable order.
-@use 'base/reset';
-@use 'base/global';
-@use 'base/typography';
-@use 'layout/container';
-@use 'layout/header';
-@use 'layout/footer';
-@use 'components/hero';
-@use 'components/features';
-@use 'media/media';
+@use "base/reset";
+@use "base/global";
+@use "base/fonts";
+@use "layout/header";
+@use "layout/footer";
+@use "media/media";

@@ -1,4 +1,4 @@
-@use '../utils/variables' as vars;
+@use "../utils/variables" as vars;
 
 @media (max-width: 48rem) {
   .nav-toggle {
@@ -12,10 +12,9 @@
     left: 1rem;
     display: none;
     padding: 0.75rem;
-    border: 1px solid vars.$color-border;
+
     border-radius: 0.75rem;
     background: #fff;
-    box-shadow: vars.$shadow-card;
   }
 
   .primary-navigation.is-open {

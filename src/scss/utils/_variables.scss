@@ -1,11 +1,9 @@
-// Shared design tokens. Change these values to theme the whole project.
-$color-text: #17202a;
-$color-muted: #536273;
-$color-background: #ffffff;
-$color-surface: #f3f6fa;
-$color-primary: #2457d6;
-$color-primary-hover: #1b43a7;
-$color-border: #d8e0ea;
-$container-width: 1120px;
-$radius-card: 1rem;
-$shadow-card: 0 0.5rem 1.5rem rgb(23 32 42 / 7%);
+///fonts///
+$font-primary: "Inter";
+$font-size: 14px;
+
+///colors///
+$bg-color: #0f141c;
+$color-text: #f7faff;
+$color-title: #b7c0d0;
+$color-secondary-title: #408CFA;

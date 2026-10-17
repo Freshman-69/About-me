@@ -1,4 +1,4 @@
-@use '../utils/variables' as vars;
+@use "../utils/variables" as vars;
 
 :root {
   color-scheme: light;
@@ -7,27 +7,88 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  font-size: vars.$font-size;
+  font-family: vars.$font-primary;
+  scroll-behavior: smooth;
+  
+}
 
 body {
+  color: vars.$color-text;
+  background-color: vars.$bg-color;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: vars.$color-text;
-  background: vars.$color-background;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  line-height: 1.6;
 }
 
-main {
-  flex: 1;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 500;
+  line-height: 1.09;
+  text-decoration: none;
+}
+
+h1,
+.h1 {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+h2,
+.h2 {
+  font-size: 48px;
+}
+
+h3,
+.h3 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+h4,
+.h4 {
+  font-size: 26px;
+}
+
+h5,
+.h5 {
+  font-size: 24px;
+}
+
+h6,
+.h6 {
+  font-size: 20px;
+}
+
+a {
+  &:hover {
+    &:hover {
+    }
+  }
+  text-decoration: none;
 }
 
 ::selection {
-  color: #fff;
-  background: vars.$color-primary;
+    color: #4364ce;
+    background-color: #0B0C0D;
 }
 
-:focus-visible {
-  outline: 3px solid vars.$color-primary;
-  outline-offset: 3px;
+
+.container {
+    max-width: 1278px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
