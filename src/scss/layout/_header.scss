@@ -1,7 +1,7 @@
 @use "../utils/variables" as vars;
 
 .header {
-  padding: 48px 0;
+  padding: 20px 0;
   z-index: 1;
   width: 100%;
   height: 69px;
@@ -11,7 +11,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -30px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 90px);
@@ -24,7 +24,6 @@
     gap: var(--gap);
     display: flex;
     align-items: center;
-    padding-left: 45px;
   }
 
   &-nav {
@@ -57,36 +56,29 @@
   font-weight: 500;
 }
 
-/* Приховуємо спливаючу плашку Google Translate зверху сторінки */
-.skiptranslate, .goog-te-banner-frame {
-  display: none !important;
-}
-body {
-  top: 0 !important;
-}
 
 
-/* Основний контейнер (загальний розмір 111х43px) */
+
 .language-switcher {
   position: relative;
   display: inline-flex;
   box-sizing: border-box;
   width: 111px;
   height: 43px;
-  background-color: #1A202B; /* Темно-синій фон */
-  border: 1px solid #343C4A;   /* Рамка */
-  border-radius: 30px;        /* Округлені краї */
-  padding: 3px;               /* Внутрішній відступ для повзунка */
+  background-color: #1A202B; 
+  border: 1px solid #343C4A;   
+  border-radius: 30px;        
+  padding: 3px;               
   cursor: pointer;
   user-select: none;
 }
 
-/* Приховуємо стандартні радіокнопки */
+
 .language-switcher input[type="radio"] {
   display: none;
 }
 
-/* Стилі для тексту (ділимо ширину навпіл) */
+
 .language-switcher label {
   position: relative;
   display: flex;
@@ -97,31 +89,31 @@ body {
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 13px;
-  color: #949EB2; /* Сірий колір неактивного тексту */
-  z-index: 2;     /* Текст поверх повзунка */
+  color: #949EB2; 
+  z-index: 2;     
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-/* Колір активного тексту */
+
 .language-switcher input[type="radio"]:checked + label {
   color: #ffffff;
 }
 
-/* Синій повзунок (автоматично розраховує розмір під половину форми) */
+
 .language-switcher .slider {
   position: absolute;
   top: 3px;
   left: 3px;
   width: calc(50% - 3px);
   height: calc(100% - 6px);
-  background-color: vars.$color-secondary-title; /* Синій колір */
+  background-color: vars.$color-secondary-title; 
   border-radius: 25px;
   z-index: 1;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Рух повзунка на другу половину при виборі UA */
+
 .language-switcher input[id="lang-ua"]:checked ~ .slider {
   transform: translateX(100%);
 }
