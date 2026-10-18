@@ -1,0 +1,71 @@
+@use "../utils/variables" as vars;
+
+.about-me-section {
+  width: 100%;
+  padding-top: 79px;
+
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 300px;
+    background-color: vars.$color-section;
+    border-radius: 24px;
+    padding: 0 0 0 40px;
+
+    .about-txt {
+      display: flex;
+      flex-direction: column;
+      width: 680px;
+      height: 170px;
+      gap: 20px;
+
+      h6 {
+        font-size: 13px;
+        font-weight: 700;
+        color: vars.$color-secondary-title;
+      }
+      h1 {
+        font-size: 34px;
+        font-weight: 700;
+        color: vars.$color-text;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: 400;
+        color: vars.$color-title;
+      }
+    }
+
+    .about-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 250px;
+      height: 155px;
+      margin: auto;
+      gap: 20px;
+
+      h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: vars.$color-text;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 400;
+        color: vars.$color-title;
+      }
+
+      .about-stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+    }
+  }
+}

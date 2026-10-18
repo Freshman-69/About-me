@@ -1,17 +1,17 @@
 @use "../utils/variables" as vars;
 
 .header {
-  padding: 20px 0;
+  padding: 13px 0;
   z-index: 1;
   width: 100%;
   height: 69px;
   position: fixed;
-  backdrop-filter: blur(5px);
+  background-color: vars.$bg-color;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -15px;
+    bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 90px);
@@ -35,9 +35,8 @@
       padding: 3px 0;
     }
   }
-}
 
-.logo {
+  .logo {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -117,4 +116,7 @@
 .language-switcher input[id="lang-ua"]:checked ~ .slider {
   transform: translateX(100%);
 }
+}
+
+
 
