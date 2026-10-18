@@ -11,7 +11,6 @@ html {
   font-size: vars.$font-size;
   font-family: vars.$font-primary;
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -72,20 +71,43 @@ h6,
 }
 
 a {
-  
   text-decoration: none;
 }
 
 ::selection {
-    color: #4364ce;
-    background-color: #0B0C0D;
+  color: #4364ce;
+  background-color: #0b0c0d;
 }
 
-
 .container {
-    max-width: 1278px;
-    padding-left: 47px;
-    padding-right: 47px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1278px;
+  padding-left: 47px;
+  padding-right: 47px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-txt {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: 170px;
+  gap: 20px;
+
+  h6 {
+    font-size: 13px;
+    font-weight: 700;
+    color: vars.$color-secondary-title;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: vars.$color-text;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    color: vars.$color-title;
+  }
 }

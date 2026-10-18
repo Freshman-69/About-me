@@ -1,0 +1,46 @@
+@use "../utils/variables" as vars;
+
+.skills {
+  width: 100%;
+  padding-top: 50px;
+  .about-txt {
+    margin-bottom: -40px;
+
+    h6 {
+      margin-bottom: 5px;
+    }
+  }
+
+  .skills-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+
+    .skills-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 285px;
+      height: 170px;
+      background-color: vars.$color-section;
+      border-radius: 18px;
+      margin-left: auto;
+      padding: 20px;
+      gap: 20px;
+
+      h1{
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      p{
+        font-size: 14px;
+        font-weight: 400;
+        color: vars.$color-title;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use "../utils/variables" as vars;
+
+.projects {
+  width: 100%;
+  padding-top: 50px;
+
+  h6 {
+    margin-bottom: 5px;
+  }
+
+  .project-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+
+    .project-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 385px;
+      height: 420px;
+      background-color: vars.$color-section;
+      padding: 20px;
+      border-radius: 20px;
+      gap: 10px;
+
+      .project-item_photo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 341px;
+        height: 190px;
+        border-radius: 14px;
+        background-color: #232a35;
+        padding: 20px;
+
+        h1 {
+          font-size: 48px;
+          font-weight: 700;
+          color: vars.$color-secondary-title;
+        }
+      }
+
+      .project-item_info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 330px;
+        height: 145px;
+        padding-top: 10px;
+        gap: 10px;
+
+        h1 {
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400px;
+          color: vars.$color-title;
+        }
+      }
+      h6 {
+        font-size: 12px;
+        font-weight: 700;
+        color: vars.$color-secondary-title;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
